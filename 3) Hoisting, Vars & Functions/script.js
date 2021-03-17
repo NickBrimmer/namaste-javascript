@@ -22,6 +22,6 @@ var getNameArrow = () => {
 }
 
 // logs out like a variable. 
-var getName = function (){
+var getName = function () {
     console.log("Namaste JavaScript");
 }
