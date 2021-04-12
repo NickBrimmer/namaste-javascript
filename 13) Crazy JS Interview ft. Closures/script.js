@@ -1,12 +1,13 @@
-function outer() {
-    var a = 10;
-
-    function inner() {
-        console.log(a);
+function outerOuter() {
+    let c = 20;
+    function outer(b) {
+        function inner() {
+            console.log(a, b, c);
+        }
+        let a = 10;
+        return inner
     }
-    return inner
+    return outer
 }
 
-outer()()
-var close = outer()
-close()
+outerOuter()("Namaste JS")()
