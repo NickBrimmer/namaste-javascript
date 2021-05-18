@@ -10,4 +10,9 @@ function outerOuter() {
     return outer
 }
 
+// outerOuter returns outer
+// outer receives "b" params
+// outer returns inner
+// inner returns console.log
+
 outerOuter()("Namaste JS")()
