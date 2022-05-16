@@ -6,7 +6,7 @@ let name = {
     }
 }
 
-const printfullName = function (hometown) {
+const printFullName = function (hometown) {
     console.log(this.firstName + this.lastName + " from " + hometown)
 }
 
@@ -15,14 +15,15 @@ let name2 = {
     lastName: "Brimmer"
 }
 
+// normal object method invocation.
 name.printer()
 
 // call(<objectEnvironment>, args1, args2...) Arguments individually
-printfullName.call(name, "Yakima")
+printFullName.call(name2, "Yakima")
 
 // apply(<objectEnvironment, [argList1, argList2...]>)  arguments as array list
-printfullName.apply(name, ["Nowhere"])
+printFullName.apply(name, [ "Nowhere" ])
 
 // bind method
-let printMyName = printfullName.bind(name2, "Yakima");
+let printMyName = printFullName.bind(name2, "Yakima");
 printMyName()
