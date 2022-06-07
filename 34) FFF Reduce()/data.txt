@@ -1,6 +1,0 @@
-mark johansson  waggle  iron 40 1
-mark johansson  blender 200 10
-mark johansson  knife 10   4
-Nikita  Smith   waffle  iron 80 1
-Nikita  Smith   knife   10  2
-Nikita  Smith   pot 20  3
