@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "highland": "^2.13.5"
+  }
+}
